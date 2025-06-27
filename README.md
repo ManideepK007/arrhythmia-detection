@@ -1,13 +1,13 @@
-Automated Detection of Cardiac Arrhythmia using Recurrent Neural Network (LSTM & CNN)
-This project implements a desktop application for the automated detection and classification of cardiac arrhythmias using deep learning models (Long Short-Term Memory - LSTM and Convolutional Neural Network - CNN). The application provides a user-friendly graphical interface (GUI) built with Tkinter to facilitate dataset management, model training, and performance evaluation.
+AUTOMATED DETECTION OF CARDIAC ARRHYTHMIA USING RECURRENT NEURAL NETWORK (LSTM & CNN)
+This project implements a desktop application for the automated detection and classification of cardiac arrhythmias using Deep Learning models (Long Short-Term Memory - LSTM and Convolutional Neural Network - CNN). The application provides a User-friendly Graphical User Interface (GUI) built with Tkinter to facilitate dataset management, model training, and performance evaluation.
 
-Problem Statement
-Cardiac arrhythmias, or irregular heartbeats, can range from benign to life-threatening conditions. Accurate and timely diagnosis is crucial for effective patient management. Manual interpretation of Electrocardiogram (ECG) signals by cardiologists is time-consuming and can be prone to human error. This project aims to automate this detection process using advanced deep learning techniques to provide a fast and reliable diagnostic aid.
+PROBLEM STATEMENT
+Cardiac Arrhythmias, or irregular heartbeats, can range from benign to life-threatening conditions. Accurate and timely diagnosis is crucial for effective patient management. Manual interpretation of Electrocardiogram (ECG) signals by cardiologists is time-consuming and can be prone to human error. This project aims to automate this detection process using advanced Deep Learning techniques to provide a fast and reliable diagnostic aid.
 
-Solution Overview
-The application utilizes a deep learning pipeline consisting of data preprocessing, model training (LSTM and CNN), and comprehensive performance evaluation. It leverages the power of recurrent and convolutional neural networks to learn intricate patterns from ECG data and classify various cardiac conditions.
+SOLUTION OVERVIEW
+The application utilizes a Deep Learning pipeline consisting of data preprocessing, model training (LSTM and CNN), and comprehensive performance evaluation. It leverages the power of Recurrent Neural Networks and Convolutional Neural Networks to learn intricate patterns from ECG data and classify various Cardiac conditions.
 
-Features
+FEATURES
 Dataset Upload: Load ECG datasets (CSV format) into the application.
 
 Data Preprocessing:
@@ -22,21 +22,21 @@ Applies Principal Component Analysis (PCA) for dimensionality reduction.
 
 Splits data into training and testing sets.
 
-LSTM Model Training & Evaluation: Builds, trains, and evaluates a Long Short-Term Memory (LSTM) neural network.
+LSTM Model Training & Evaluation: Builds, trains, and evaluates a Long Short-Term Memory (LSTM) Neural Network.
 
 CNN Model Training & Evaluation: Builds, trains, and evaluates a Convolutional Neural Network (CNN) model.
 
 Performance Metrics: Calculates and displays Accuracy, Precision, Recall, F1-Score, Sensitivity, and Specificity for both models.
 
-Confusion Matrices: Visualizes classification performance with seaborn heatmaps.
+Confusion Matrices: Visualizes classification performance with Seaborn heatmaps.
 
-Training Graphs: Plots training accuracy and loss curves for both LSTM and CNN.
+Training Graphs: Plots training Accuracy and loss curves for both LSTM and CNN.
 
 Performance Table: Generates an HTML table summarizing the performance of both models, which opens in a web browser.
 
 Model Persistence: Saves trained models and their weights, allowing for faster re-evaluation without retraining.
 
-Technologies Used:
+TECHNOLOGIES USED
 Python 3.10
 
 Tkinter: For the Graphical User Interface (GUI).
@@ -53,13 +53,13 @@ TensorFlow: Backend for Keras.
 
 Matplotlib: For plotting various graphs.
 
-Seaborn: For enhanced data visualization, especially confusion matrices.
+Seaborn: For enhanced Data Visualization, especially confusion matrices.
 
 Git: Version control.
 
 Git Large File Storage (Git LFS): For managing large dataset files within the repository.
 
-Dataset
+DATASET
 This project is designed to work with the MIT-BIH Arrhythmia Database, a widely recognized dataset for cardiac arrhythmia research. For ease of use with this application, it is recommended to use a preprocessed version of this dataset available in CSV format.
 
 A suitable preprocessed dataset can be downloaded from Kaggle:
@@ -67,7 +67,6 @@ A suitable preprocessed dataset can be downloaded from Kaggle:
 ECG Heartbeat Categorization Dataset: https://www.kaggle.com/datasets/shayanfazeli/heartbeat
 
 Dataset Preparation Steps:
-
 Download: Download the heartbeat.zip file from the Kaggle link above.
 
 Extract: Unzip the downloaded file. You will find mitbih_train.csv and mitbih_test.csv.
@@ -87,7 +86,7 @@ Place CSV: Place your combined_mitbih.csv (or just mitbih_train.csv if you prefe
 
 Note on Dataset Columns: The Kaggle dataset files typically have 188 columns, with the last column (index 187) representing the heartbeat class. The application's preprocessing step (preprocessDataset) will automatically rename this last column to 279 for internal consistency. The classes are typically mapped as: 0: N (Normal), 1: S (Supraventricular Ectopic), 2: V (Ventricular Ectopic), 3: F (Fusion), 4: Q (Unclassified).
 
-Setup and Installation
+SETUP AND INSTALLATION
 Follow these steps to get the project running on your local machine:
 
 1. Clone the Repository
@@ -128,7 +127,7 @@ pip install pandas numpy scikit-learn matplotlib seaborn keras tensorflow
 5. Prepare the Dataset
 Follow the "Dataset Preparation Steps" outlined above to place your combined_mitbih.csv file into the Dataset/ folder.
 
-Usage
+USAGE
 Run the application:
 
 python main.py
@@ -147,7 +146,7 @@ Performance Table: Click to generate an HTML table summarizing the performance m
 
 Exit: Close the application.
 
-Expected Results
+EXPECTED RESULTS
 Upon successful execution, you will see:
 
 Text output in the application's console area detailing dataset information, preprocessing steps, and model metrics.
@@ -158,7 +157,7 @@ A comparative training graph showing accuracy and loss trends for both LSTM and 
 
 An HTML page in your web browser with a clear table comparing the performance metrics.
 
-Future Enhancements
+FUTURE ENHANCEMENTS
 Real-time Prediction: Implement functionality to load a single ECG signal and predict its arrhythmia type.
 
 Web Interface: Convert the Tkinter GUI to a web-based application (e.g., using Flask or Django for backend, and React/HTML/CSS/JS for frontend) for broader accessibility.
@@ -171,4 +170,5 @@ Data Augmentation: Implement techniques to artificially expand the dataset to im
 
 Dockerization: Containerize the application for easier deployment and environment consistency.
 
-Developed by: ManideepK007 Contact: saimanideepk007@gmail.com
+DEVELOPED BY: ManideepK007
+CONTACT: saimanideepk.p@gmail.com
